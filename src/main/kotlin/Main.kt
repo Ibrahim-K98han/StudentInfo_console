@@ -39,7 +39,9 @@ fun main (){
             val departMent:Department = departmentList.first{
                 it.deptName == deptName
             }
+            val cList = departmentList.get(deptName)
         }
 
 }
+
 
