@@ -21,7 +21,7 @@ fun main (){
             println("Select Department : ")
             print("1.CSE\t 2.BBA\t 3.EEE\t 4.CIVIL")
             val chose = scanner.nextInt()
-            val deptName:String
+            var deptName:String = ""
             when(chose){
                 1 ->{
                     deptName = "CSE"
@@ -36,8 +36,10 @@ fun main (){
                     deptName = "CIVIL"
                 }
             }
+            val departMent:Department = departmentList.first{
+                it.deptName == deptName
+            }
         }
-
 
 }
 
